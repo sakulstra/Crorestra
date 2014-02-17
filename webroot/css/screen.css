@@ -2103,15 +2103,47 @@ ul {
   border-bottom: 3px solid #98d1ed;
 }
 
-/* line 2, ../sass/_sidebar.scss */
+/* line 1, ../sass/_search.scss */
+#searchform {
+  position: relative;
+}
+
+/* line 4, ../sass/_search.scss */
+.search-field {
+  height: 26px;
+  border: 1px solid #333;
+}
+
+/* line 8, ../sass/_search.scss */
+.search-button {
+  background: none;
+  padding: 0;
+  top: 0;
+  right: -6px;
+  position: absolute;
+  border: none;
+}
+
+/* line 16, ../sass/_search.scss */
+.search {
+  vertical-align: middle;
+  background-color: #41aade;
+  color: #fff;
+  height: 26px;
+  width: 26px;
+  font-size: 20px;
+  padding: 2px 2px;
+}
+
+/* line 3, ../sass/_sidebar.scss */
 #sidebar h3 {
   margin-bottom: 0px;
 }
-/* line 5, ../sass/_sidebar.scss */
+/* line 6, ../sass/_sidebar.scss */
 #sidebar ul {
   margin-top: 0;
 }
-/* line 8, ../sass/_sidebar.scss */
+/* line 9, ../sass/_sidebar.scss */
 #sidebar a {
   height: 18px;
   line-height: 18px;
@@ -2120,7 +2152,7 @@ ul {
   overflow: hidden;
   transition: 0.3s;
 }
-/* line 15, ../sass/_sidebar.scss */
+/* line 16, ../sass/_sidebar.scss */
 #sidebar a:before {
   content: '';
   width: 18px;
@@ -2131,7 +2163,7 @@ ul {
   transform: rotate(45deg);
   transition: 0.3s;
 }
-/* line 26, ../sass/_sidebar.scss */
+/* line 27, ../sass/_sidebar.scss */
 #sidebar a:hover {
   background-color: #41aade;
   color: #fff;
@@ -2139,7 +2171,7 @@ ul {
   position: relative;
   padding: 3px 15px;
 }
-/* line 32, ../sass/_sidebar.scss */
+/* line 33, ../sass/_sidebar.scss */
 #sidebar a:hover:before {
   transition: 0.3s;
   left: -9px;

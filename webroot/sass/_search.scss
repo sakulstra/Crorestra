@@ -1,0 +1,24 @@
+#searchform{
+    position:relative;   
+}
+.search-field{
+    height: 26px;
+    border:1px solid #333;
+}
+.search-button{
+    background:none;
+    padding:0;
+    top:0;
+    right:-6px;
+    position:absolute;
+    border:none;
+}
+.search{
+    vertical-align: middle;
+    background-color:$maincolor;
+    color:#fff;
+    height:26px;
+    width:26px;
+    font-size:20px;
+    padding:2px 2px;
+}

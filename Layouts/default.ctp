@@ -20,6 +20,7 @@
 		echo $this->Blocks->get('script');
         echo $scripts_for_layout;
         ?>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     </head>
     <body>
 
