@@ -10,6 +10,6 @@
 		'value' => $qValue,
         'class'=>'search-field'
 	));
-	echo $this->Form->button('<i class="fa fa-search search"></i>',array('class'=>'search-button'));
+	echo $this->Form->button('<i class="fa fa-search search-icon"></i>',array('class'=>'search-button'));
 ?>
 </form>

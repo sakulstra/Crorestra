@@ -16,6 +16,10 @@
         echo $this->Meta->meta();
         echo $this->Layout->feed();
         echo $this->Html->css(array('screen'));
+        echo $this->Layout->js();
+        echo $this->Html->script(array(
+			'/croogo/js/jquery/jquery.min'
+		));
         echo $this->Blocks->get('css');
 		echo $this->Blocks->get('script');
         echo $scripts_for_layout;
@@ -54,6 +58,9 @@
                 </div>
             </footer>
         </div>
-
+    <?php
+		echo $this->Blocks->get('scriptBottom');
+		echo $this->Js->writeBuffer();
+	?>
     </body>
 </html>
