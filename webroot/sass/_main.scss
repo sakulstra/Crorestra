@@ -1,0 +1,15 @@
+body{
+    border-top: 5px solid $maincolor;   
+}
+#main{
+    padding:0;
+}
+/* links */
+a{
+    font-weight: 800;
+    color:$maincolor;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

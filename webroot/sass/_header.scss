@@ -1,0 +1,12 @@
+.main ul{
+    & li{
+        display:inline-block;
+        & a{
+            padding: 3px 8px;
+            &.selected{
+                background-color: $maincolor;
+                color:#fff;
+            }
+        }
+    }
+}
