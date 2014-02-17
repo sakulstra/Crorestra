@@ -7,6 +7,11 @@
                 background-color: $maincolor;
                 color:#fff;
             }
+            &:hover{
+                text-decoration: none;
+                padding-bottom: 0px;
+                border-bottom: 3px solid lighten($maincolor,20%);
+            }
         }
     }
 }

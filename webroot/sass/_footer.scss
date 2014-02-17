@@ -1,0 +1,13 @@
+footer{
+    border-top:6px solid lighten($maincolor,30%);
+}
+footer ul li{
+    display:inline-block;
+    & a{
+        padding:3px 8px;
+    }
+}
+.credits{
+    text-align:center;
+    font-size:0.9em;   
+}

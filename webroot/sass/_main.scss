@@ -4,6 +4,9 @@ body{
 #main{
     padding:0;
 }
+.sub{
+    font-size:0.7em;   
+}
 /* links */
 a{
     font-weight: 800;
@@ -12,4 +15,9 @@ a{
     &:hover{
         text-decoration: underline;
     }
+}
+/* lists */
+ul{
+    list-style-type: none;
+    padding:0;
 }

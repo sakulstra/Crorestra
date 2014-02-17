@@ -2045,16 +2045,28 @@ body {
   padding: 0;
 }
 
+/* line 7, ../sass/_main.scss */
+.sub {
+  font-size: 0.7em;
+}
+
 /* links */
-/* line 8, ../sass/_main.scss */
+/* line 11, ../sass/_main.scss */
 a {
   font-weight: 800;
   color: #41aade;
   text-decoration: none;
 }
-/* line 12, ../sass/_main.scss */
+/* line 15, ../sass/_main.scss */
 a:hover {
   text-decoration: underline;
+}
+
+/* lists */
+/* line 20, ../sass/_main.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* line 2, ../sass/_header.scss */
@@ -2070,28 +2082,71 @@ a:hover {
   background-color: #41aade;
   color: #fff;
 }
+/* line 10, ../sass/_header.scss */
+.main ul li a:hover {
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 3px solid #98d1ed;
+}
 
 /* line 2, ../sass/_sidebar.scss */
 #sidebar h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 /* line 5, ../sass/_sidebar.scss */
 #sidebar ul {
   margin-top: 0;
-  padding: 0;
 }
 /* line 8, ../sass/_sidebar.scss */
-#sidebar ul li {
-  list-style-type: none;
-}
-/* line 12, ../sass/_sidebar.scss */
 #sidebar a {
+  height: 18px;
+  line-height: 18px;
   display: block;
-  padding: 3px 6px;
+  padding: 3px 0px;
+  overflow: hidden;
+  transition: 0.3s;
 }
-/* line 16, ../sass/_sidebar.scss */
+/* line 15, ../sass/_sidebar.scss */
+#sidebar a:before {
+  content: '';
+  width: 18px;
+  left: -18px;
+  height: 18px;
+  background-color: #eff8fc;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+/* line 26, ../sass/_sidebar.scss */
 #sidebar a:hover {
   background-color: #41aade;
   color: #fff;
   transition: 0.3s;
+  position: relative;
+  padding: 3px 15px;
+}
+/* line 32, ../sass/_sidebar.scss */
+#sidebar a:hover:before {
+  transition: 0.3s;
+  left: -9px;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  border-top: 6px solid #c3e4f5;
+}
+
+/* line 4, ../sass/_footer.scss */
+footer ul li {
+  display: inline-block;
+}
+/* line 6, ../sass/_footer.scss */
+footer ul li a {
+  padding: 3px 8px;
+}
+
+/* line 10, ../sass/_footer.scss */
+.credits {
+  text-align: center;
+  font-size: 0.9em;
 }

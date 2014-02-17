@@ -29,7 +29,7 @@
 
         <div id="wrapper">
             <header class="grid-container">
-                <div id="grid-100">
+                <div class="grid-100">
                     <h1><?php echo $this->Html->link(Configure::read('Site.title'), "/");?></h1>
                     <div id="tagline">
                         <span><?php echo Configure::read('Site.tagline');?></span>
@@ -48,10 +48,11 @@
                 </div>
             </div>
             <footer class="grid-container">
-                <div id="grid-100">
-                <?php echo $this->Layout->menu('footer');?>
-                    <div>
-                        Powered by <?php echo $this->Html->link('Croogo', 'http://croogo.org');?> with <?php echo $this->Html->link('Crorestra Theme', 'http://sakulstra.org');?>.
+                <div class="grid-100">
+                    <?php echo $this->Layout->menu('footer');?>
+                    <div class="credits">
+                        &copy;<?php echo date('Y');?>&nbsp;<?php echo $this->Html->link(Configure::read('Site.title'), "/");?> 
+                        <span class="sub">Powered by <?php echo $this->Html->link('Croogo', 'http://croogo.org');?> with <?php echo $this->Html->link('Crorestra Theme', 'http://sakulstra.org');?></span>
                     </div>
                 </div>
             </footer>
