@@ -15,11 +15,7 @@
         <?php
         echo $this->Meta->meta();
         echo $this->Layout->feed();
-        echo $this->Html->css(array(
-            'screen'
-        ));
-        ?>
-        <?php 
+        echo $this->Html->css(array('screen'));
         echo $this->Blocks->get('css');
 		echo $this->Blocks->get('script');
         echo $scripts_for_layout;
@@ -30,14 +26,14 @@
         <div id="wrapper">
             <header class="grid-container">
                 <div class="grid-100">
-                    <h1><?php echo $this->Html->link(Configure::read('Site.title'), "/");?></h1>
+                    <h1 class="title"><?php echo $this->Html->link(Configure::read('Site.title'), "/");?></h1>
                     <div id="tagline">
-                        <span><?php echo Configure::read('Site.tagline');?></span>
+                        <?php echo Configure::read('Site.tagline');?>
                     </div>
+                    <nav class="main">
+                        <?php echo $this->Layout->menu('main');?>
+                    </nav>
                 </div>
-                <nav class="main">
-                    <?php echo $this->Layout->menu('main');?>
-                </nav>
             </header>
             <div id="main" class="grid-container">
                 <div id="content" class="grid-80">

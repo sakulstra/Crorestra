@@ -2069,20 +2069,34 @@ ul {
   padding: 0;
 }
 
-/* line 2, ../sass/_header.scss */
+/* line 1, ../sass/_header.scss */
+.title {
+  margin: 0;
+  padding: 18px 0 0 3px;
+}
+
+/* line 5, ../sass/_header.scss */
+#tagline {
+  color: #fff;
+  background-color: #41aade;
+  font-weight: 800;
+  padding: 3px 6px;
+}
+
+/* line 12, ../sass/_header.scss */
 .main ul li {
   display: inline-block;
 }
-/* line 4, ../sass/_header.scss */
+/* line 14, ../sass/_header.scss */
 .main ul li a {
   padding: 3px 8px;
 }
-/* line 6, ../sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 .main ul li a.selected {
   background-color: #41aade;
   color: #fff;
 }
-/* line 10, ../sass/_header.scss */
+/* line 20, ../sass/_header.scss */
 .main ul li a:hover {
   text-decoration: none;
   padding-bottom: 0px;

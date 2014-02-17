@@ -1,3 +1,13 @@
+.title{
+    margin:0;
+    padding: 18px 0 0 3px;
+}
+#tagline{
+    color:#fff;
+    background-color:$maincolor;
+    font-weight:800;
+    padding:3px 6px;
+}
 .main ul{
     & li{
         display:inline-block;
