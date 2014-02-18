@@ -1,0 +1,39 @@
+@import "search";
+
+#sidebar{
+    & h3{
+        margin-bottom:0px;   
+    }
+    & ul{
+        margin-top:0;
+    }
+    & a{
+        height: 18px;
+        line-height: 18px;
+        display:block;
+        padding: 3px 0px;
+        overflow:hidden;
+        transition:0.3s;
+        &:before{
+            content:'';
+            width:18px;
+            left:-18px;
+            height: 18px;
+            background-color:lighten($maincolor,40%);
+            position:absolute;
+            transform: rotate(45deg);
+            transition:0.3s;
+        }
+    }
+    & a:hover{
+        background-color:$maincolor;
+        color:#fff;
+        transition:0.3s;
+        position:relative;
+        padding:3px 15px;
+        &:before{
+            transition:0.3s;
+            left:-9px;
+        }
+    }
+}

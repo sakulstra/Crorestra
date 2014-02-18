@@ -2103,18 +2103,18 @@ ul {
   border-bottom: 3px solid #98d1ed;
 }
 
-/* line 1, ../sass/_search.scss */
+/* line 1, ../sass/sidebar/_search.scss */
 #searchform {
   position: relative;
 }
 
-/* line 4, ../sass/_search.scss */
+/* line 4, ../sass/sidebar/_search.scss */
 .search-field {
   height: 26px;
   border: 1px solid #333;
 }
 
-/* line 8, ../sass/_search.scss */
+/* line 8, ../sass/sidebar/_search.scss */
 .search-button {
   background: none;
   padding: 0;
@@ -2124,26 +2124,26 @@ ul {
   border: none;
 }
 
-/* line 16, ../sass/_search.scss */
+/* line 16, ../sass/sidebar/_search.scss */
 .search-icon {
   vertical-align: middle;
   background-color: #41aade;
   color: #fff;
   height: 26px;
   width: 26px;
-  font-size: 20px;
+  font-size: 22px;
   padding: 2px 2px;
 }
 
-/* line 3, ../sass/_sidebar.scss */
+/* line 4, ../sass/sidebar/_sidebar.scss */
 #sidebar h3 {
   margin-bottom: 0px;
 }
-/* line 6, ../sass/_sidebar.scss */
+/* line 7, ../sass/sidebar/_sidebar.scss */
 #sidebar ul {
   margin-top: 0;
 }
-/* line 9, ../sass/_sidebar.scss */
+/* line 10, ../sass/sidebar/_sidebar.scss */
 #sidebar a {
   height: 18px;
   line-height: 18px;
@@ -2152,7 +2152,7 @@ ul {
   overflow: hidden;
   transition: 0.3s;
 }
-/* line 16, ../sass/_sidebar.scss */
+/* line 17, ../sass/sidebar/_sidebar.scss */
 #sidebar a:before {
   content: '';
   width: 18px;
@@ -2163,7 +2163,7 @@ ul {
   transform: rotate(45deg);
   transition: 0.3s;
 }
-/* line 27, ../sass/_sidebar.scss */
+/* line 28, ../sass/sidebar/_sidebar.scss */
 #sidebar a:hover {
   background-color: #41aade;
   color: #fff;
@@ -2171,7 +2171,7 @@ ul {
   position: relative;
   padding: 3px 15px;
 }
-/* line 33, ../sass/_sidebar.scss */
+/* line 34, ../sass/sidebar/_sidebar.scss */
 #sidebar a:hover:before {
   transition: 0.3s;
   left: -9px;
@@ -2195,4 +2195,33 @@ footer ul li a {
 .credits {
   text-align: center;
   font-size: 0.9em;
+}
+
+/* line 1, ../sass/_forms.scss */
+input[type='text'], input[type='email'] {
+  width: 100%;
+}
+
+/* line 4, ../sass/_forms.scss */
+input[type='submit'] {
+  background-color: #41aade;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  padding: 3px 3px;
+  transition: color 0.4s;
+}
+/* line 11, ../sass/_forms.scss */
+input[type='submit']:hover {
+  border: 3px solid #41aade;
+  background-color: #fff;
+  color: #41aade;
+  padding: 0;
+  transition: color 0.4s;
+}
+
+/* line 19, ../sass/_forms.scss */
+textarea {
+  min-width: 100%;
+  max-width: 100%;
 }
